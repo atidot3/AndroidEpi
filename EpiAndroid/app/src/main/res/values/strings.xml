@@ -1,8 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">My Application</string>
+    <string name="app_name">EpiAndroid</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_infos">InfosActivity</string>
+    <string name="title_activity_info">InfosActivity</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_section1">Acceuil</string>
+    <string name="title_section2">Ma semaine</string>
+    <string name="title_section3">Planning Général</string>
+    <string name="title_section4">Mes Rendez-vous</string>
+    <string name="title_section5">Mes projets</string>
+    <string name="title_section6">Mes notes</string>
+    <string name="title_section7">Mes susies</string>
+    <string name="title_section8">Mes modules</string>
+    <string name="title_section9">Trombinoscope</string>
+    <string name="title_section10">Messages</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="title_activity_ma_semaine">MaSemaine</string>
 
 </resources>

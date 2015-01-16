@@ -35,23 +35,26 @@ import org.apache.http.util.EntityUtils;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import android.content.Intent;
 
 public class Login extends ActionBarActivity {
     private EditText EmailText;
     private EditText PasswordText;
     private TextView Error;
     private LoginController loginController;
-    private InformationsController IFController;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (android.os.Build.VERSION.SDK_INT > 9)
-        {
+        if (android.os.Build.VERSION.SDK_INT > 9) {
             StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
             StrictMode.setThreadPolicy(policy);
+            LoginFunct();
         }
+    }
+
+    private void LoginFunct()
+    {
         loginController = new LoginController();
         setContentView(R.layout.activity_login);
         EmailText = (EditText) findViewById(R.id.editText);
@@ -69,11 +72,15 @@ public class Login extends ActionBarActivity {
                     {
                         if ((loginController.send(EmailText.getText().toString(), PasswordText.getText().toString())) == true)
                         {
-                            IFController = new InformationsController();
-                            if ((IFController.send(JsonResponce.getToken())) == true)
-                                Error.setText(JsonResponce.getIp());
-                            else
-                                Error.setText("Connection token is invalid or has expired");
+                            new Thread(new Runnable()
+                            {
+                                public void run()
+                                {
+                                    Globals.loginController = loginController;
+                                    Intent i = new Intent(getApplicationContext(), Home.class);
+                                    startActivity(i);
+                                }
+                            }).start();
                         }
                     }
                     catch (IOException e)

@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text=""
+        android:text="entrin_a"
         android:ems="10"
         android:id="@+id/editText"
         android:layout_alignParentTop="true"
@@ -34,7 +34,8 @@
         android:ems="10"
         android:id="@+id/editText2"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:text="A:+Cnpll" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -49,10 +50,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Large Text"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Login"
+        android:id="@+id/textView3"
+        android:layout_alignBottom="@+id/editText"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp" />
+        android:layout_marginBottom="48dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Password"
+        android:id="@+id/textView4"
+        android:layout_above="@+id/editText2"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
