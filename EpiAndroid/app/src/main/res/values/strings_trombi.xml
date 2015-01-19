@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="promo_epitech">
+        <item>Promo 2002</item>
+        <item>Promo 2003</item>
+        <item>Promo 2004</item>
+        <item>Promo 2005</item>
+        <item>Promo 2006</item>
+        <item>Promo 2007</item>
+        <item>Promo 2008</item>
+        <item>Promo 2009</item>
+        <item>Promo 2010</item>
+        <item>Promo 2011</item>
+        <item>Promo 2012</item>
+        <item>Promo 2013</item>
+        <item>Promo 2014</item>
+        <item>Promo 2015</item>
+        <item>Promo 2016</item>
+        <item>Promo 2017</item>
+        <item>Promo 2018</item>
+        <item>Promo 2019</item>
+    </string-array>
+    <string-array name="promo_location">
+        <item>FR/MPL</item>
+        <item>FR/BDX</item>
+        <item>FR/LIL</item>
+        <item>FR/LYN</item>
+        <item>FR/MAR</item>
+        <item>FR/NCY</item>
+        <item>FR/NAN</item>
+        <item>FR/NCE</item>
+        <item>FR/PR</item>
+        <item>FR/REN</item>
+        <item>FR/STG</item>
+        <item>FR/TLS</item>
+    </string-array>
+</resources>
